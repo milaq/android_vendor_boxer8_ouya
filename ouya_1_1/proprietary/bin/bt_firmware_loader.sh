@@ -1,7 +1,7 @@
 #!/system/bin/sh
 if [ -z "$(getprop ro.boot.commchip_id)" ]; then
-	echo "No commchip_id available. Using default BCM4330 configuration"
-	brcm_patchram_plus --enable_hci --use_baudrate_for_download --scopcm=0,2,0,0,0,0,0,0,0,0  --baudrate 3000000 --patchram /etc/firmware/bcm4330.hcd --no2bytes --enable_lpm --tosleep=50000 /dev/ttyHS2
+	echo "No commchip_id available. Using default BCM4334 configuration"
+	brcm_patchram_plus --enable_hci --use_baudrate_for_download --scopcm=0,2,0,0,0,0,0,0,0,0  --baudrate 3000000 --patchram /etc/firmware/bcm4334.hcd --no2bytes --enable_lpm --tosleep=50000 /dev/ttyHS2
 elif [ $(getprop ro.boot.commchip_id) -eq 4 ]; then
 	echo "marvell"
 	hciattach -n ttyHS2 any 3000000 flow
@@ -11,6 +11,9 @@ elif [ $(getprop ro.boot.commchip_id) -eq 2 ]; then
 elif [ $(getprop ro.boot.commchip_id) -eq 3 ]; then
 	echo "4330"
 	brcm_patchram_plus --enable_hci --use_baudrate_for_download --scopcm=0,2,0,0,0,0,0,0,0,0  --baudrate 3000000 --patchram /etc/firmware/bcm4330.hcd --no2bytes --enable_lpm --tosleep=50000 /dev/ttyHS2
+elif [ $(getprop ro.boot.commchip_id) -eq 1 ]; then
+	echo "4334"
+	brcm_patchram_plus --enable_hci --use_baudrate_for_download --scopcm=0,2,0,0,0,0,0,0,0,0  --baudrate 3000000 --patchram /etc/firmware/bcm4334.hcd --no2bytes --enable_lpm --tosleep=50000 /dev/ttyHS2
 elif [ $(getprop ro.boot.commchip_id) -eq 0 ]; then
 	echo "4330"
 	brcm_patchram_plus --enable_hci --use_baudrate_for_download --scopcm=0,2,0,0,0,0,0,0,0,0  --baudrate 3000000 --patchram /etc/firmware/bcm4330.hcd --no2bytes --enable_lpm --tosleep=50000 /dev/ttyHS2

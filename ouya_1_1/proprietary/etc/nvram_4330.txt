@@ -47,8 +47,4 @@ txgaintbl=1
 triso2g=7
 muxenab=0x10
 # For BT HID device
-btc_flags=0x52
-btc_params0=1
-btc_params1=40000
-btc_params6=31
-btc_params8=10000
+btc_params95=14

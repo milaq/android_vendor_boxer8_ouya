@@ -17,30 +17,17 @@
 PRODUCT_COPY_FILES += \
         vendor/boxer8/ouya/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
         vendor/boxer8/ouya/proprietary/bin/unimac:system/bin/unimac \
-        vendor/boxer8/ouya/proprietary/bin/bt_mac.sh:system/bin/bt_mac.sh \
-        vendor/boxer8/ouya/proprietary/bin/eth_mac.sh:system/bin/eth_mac.sh \
         vendor/boxer8/ouya/proprietary/bin/rm_ts_server:system/bin/rm_ts_server \
         vendor/boxer8/ouya/proprietary/bin/tf_daemon:system/bin/tf_daemon \
-        vendor/boxer8/ouya/proprietary/etc/asound.conf:system/etc/asound.conf \
-        vendor/boxer8/ouya/proprietary/etc/enctune.conf:system/etc/enctune.conf \
-        vendor/boxer8/ouya/proprietary/etc/model_frontal.xml:system/etc/model_frontal.xml \
-        vendor/boxer8/ouya/proprietary/etc/nvaudio_conf.xml:system/etc/nvaudio_conf.xml \
-        vendor/boxer8/ouya/proprietary/etc/nvcamera.conf:system/etc/nvcamera.conf \
-        vendor/boxer8/ouya/proprietary/etc/nvram_4330.txt:system/etc/nvram_4330.txt \
         vendor/boxer8/ouya/proprietary/etc/firmware/bcm4330.hcd:system/etc/firmware/bcm4330.hcd \
         vendor/boxer8/ouya/proprietary/etc/firmware/nvavp_aud_ucode.bin:system/etc/firmware/nvavp_aud_ucode.bin \
         vendor/boxer8/ouya/proprietary/etc/firmware/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
         vendor/boxer8/ouya/proprietary/etc/firmware/nvavp_os_eff00000.bin:system/etc/firmware/nvavp_os_eff00000.bin \
         vendor/boxer8/ouya/proprietary/etc/firmware/nvavp_vid_ucode_alt.bin:system/etc/firmware/nvavp_vid_ucode_alt.bin \
-        vendor/boxer8/ouya/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/boxer8/ouya/proprietary/lib/egl/libEGL_perfhud.so:system/lib/egl/libEGL_perfhud.so \
         vendor/boxer8/ouya/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
         vendor/boxer8/ouya/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
-        vendor/boxer8/ouya/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-        vendor/boxer8/ouya/proprietary/lib/egl/libGLESv1_CM_perfhud.so:system/lib/egl/libGLESv1_CM_perfhud.so \
         vendor/boxer8/ouya/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
         vendor/boxer8/ouya/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
-        vendor/boxer8/ouya/proprietary/lib/egl/libGLESv2_perfhud.so:system/lib/egl/libGLESv2_perfhud.so \
         vendor/boxer8/ouya/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
         vendor/boxer8/ouya/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
         vendor/boxer8/ouya/proprietary/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
@@ -66,6 +53,7 @@ PRODUCT_COPY_FILES += \
         vendor/boxer8/ouya/proprietary/lib/libnvcap_video.so:system/lib/libnvcap_video.so \
         vendor/boxer8/ouya/proprietary/lib/libnvcontrol_jni.so:system/lib/libnvcontrol_jni.so \
         vendor/boxer8/ouya/proprietary/lib/libnvcpud.so:system/lib/libnvcpud.so \
+        vendor/boxer8/ouya/proprietary/lib/libnvcpud_client.so:system/lib/libnvcpud_client.so \
         vendor/boxer8/ouya/proprietary/lib/libnvddk_2d.so:system/lib/libnvddk_2d.so \
         vendor/boxer8/ouya/proprietary/lib/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
         vendor/boxer8/ouya/proprietary/lib/libnvglsi.so:system/lib/libnvglsi.so \
@@ -110,23 +98,6 @@ PRODUCT_COPY_FILES += \
         vendor/boxer8/ouya/proprietary/lib/libsensors.isl29018.so:system/lib/libsensors.isl29018.so \
         vendor/boxer8/ouya/proprietary/lib/libsensors.isl29028.so:system/lib/libsensors.isl29028.so \
         vendor/boxer8/ouya/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/default.conf:system/usr/share/alsa/pcm/default.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/dmix.conf:system/usr/share/alsa/pcm/dmix.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/dpl.conf:system/usr/share/alsa/pcm/dpl.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/dsnoop.conf:system/usr/share/alsa/pcm/dsnoop.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/front.conf:system/usr/share/alsa/pcm/front.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/iec958.conf:system/usr/share/alsa/pcm/iec958.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/modem.conf:system/usr/share/alsa/pcm/modem.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/rear.conf:system/usr/share/alsa/pcm/rear.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/side.conf:system/usr/share/alsa/pcm/side.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/surround40.conf:system/usr/share/alsa/pcm/surround40.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
-        vendor/boxer8/ouya/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
         vendor/boxer8/ouya/proprietary/vendor/firmware/bcm4330/fw_bcmdhd_apsta.bin:system/vendor/firmware/bcm4330/fw_bcmdhd_apsta.bin \
         vendor/boxer8/ouya/proprietary/vendor/firmware/bcm4330/fw_bcmdhd.bin:system/vendor/firmware/bcm4330/fw_bcmdhd.bin \
         vendor/boxer8/ouya/proprietary/vendor/firmware/bcm4330/fw_bcmdhd_p2p.bin:system/vendor/firmware/bcm4330/fw_bcmdhd_p2p.bin

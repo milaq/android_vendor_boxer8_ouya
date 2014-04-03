@@ -37,10 +37,6 @@ PRODUCT_COPY_FILES += \
         vendor/boxer8/ouya/proprietary/lib/libaudioavp.so:system/lib/libaudioavp.so \
         vendor/boxer8/ouya/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
         vendor/boxer8/ouya/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
-        vendor/boxer8/ouya/proprietary/lib/libmllite.so:system/lib/libmllite.so \
-        vendor/boxer8/ouya/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
-        vendor/boxer8/ouya/proprietary/lib/libmplmpu.so:system/lib/libmplmpu.so \
-        vendor/boxer8/ouya/proprietary/lib/libsensors.mpl.so:system/lib/libsensors.mpl.so \
         vendor/boxer8/ouya/proprietary/lib/libnvapputil.so:system/lib/libnvapputil.so \
         vendor/boxer8/ouya/proprietary/lib/libnvasfparserhal.so:system/lib/libnvasfparserhal.so \
         vendor/boxer8/ouya/proprietary/lib/libnvaudioservice.so:system/lib/libnvaudioservice.so \
@@ -93,9 +89,6 @@ PRODUCT_COPY_FILES += \
         vendor/boxer8/ouya/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
         vendor/boxer8/ouya/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
         vendor/boxer8/ouya/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
-        vendor/boxer8/ouya/proprietary/lib/libsensors.base.so:system/lib/libsensors.base.so \
-        vendor/boxer8/ouya/proprietary/lib/libsensors.isl29018.so:system/lib/libsensors.isl29018.so \
-        vendor/boxer8/ouya/proprietary/lib/libsensors.isl29028.so:system/lib/libsensors.isl29028.so \
         vendor/boxer8/ouya/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
         vendor/boxer8/ouya/proprietary/vendor/firmware/bcm4330/fw_bcmdhd_apsta.bin:system/vendor/firmware/bcm4330/fw_bcmdhd_apsta.bin \
         vendor/boxer8/ouya/proprietary/vendor/firmware/bcm4330/fw_bcmdhd.bin:system/vendor/firmware/bcm4330/fw_bcmdhd.bin \
